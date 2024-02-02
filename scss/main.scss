@@ -1,0 +1,43 @@
+/* BASE */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import "./base/animations";
+@import "./base/mixins";
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/navIcon";
+
+/* BASE */
+
+/* BLOCK */
+
+@import "./blocks/header";
+@import "./blocks/headerVideo";
+@import "./blocks/headerBurgerMenu";
+@import './blocks/headerNav';
+@import "./blocks/info";
+@import "./blocks/infoElem";
+@import "./blocks/infoElemMobile";
+@import "./blocks/begin";
+@import "./blocks/beginGrid";
+@import "./blocks/beginMobile";
+@import "./blocks/value";
+@import "./blocks/valueGrid";
+@import "./blocks/valueMobile";
+@import "./blocks/comment";
+@import "./blocks/commentSwiper";
+@import "./blocks/commentButtons";
+@import './blocks/commentMobile';
+@import "./blocks/places";
+@import './blocks/placesMobile';
+@import "./blocks/placesScroller";
+@import "./blocks/questions";
+@import './blocks/questionsMobile';
+@import "./blocks/price";
+@import './blocks/priceMobile';
+@import './blocks/priceModal';
+
+/* BLOCK */

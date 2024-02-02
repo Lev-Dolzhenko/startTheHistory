@@ -1,0 +1,37 @@
+@media screen and (max-width: 1000px) {
+  .price__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price__grid_info_new {
+    width: auto;
+  }
+
+  .price__grid_form {
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    button {
+      margin: 0 auto;
+    }
+  }
+
+  .price__grid_info {
+    border-right: unset;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .price_grid_info_old {
+    margin-left: 0;
+  }
+}

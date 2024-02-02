@@ -1,0 +1,32 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  margin-top: clamp(32px, 1.233rem + 3.27vw, 59px);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+}
+
+.comment_image {
+  width: 295px;
+  height: 559px;
+
+  border: 10px solid $colorBgGrey;
+  border-radius: 30px;
+
+  margin: 0 auto;
+}

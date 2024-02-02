@@ -1,0 +1,13 @@
+@include mediaTabletSmall {
+    .comment_icon {
+        position: unset;
+        margin: 31px auto 0;
+    }
+}
+
+@include mediaLaptop {
+    .comment__buttons {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}

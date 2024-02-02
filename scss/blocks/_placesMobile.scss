@@ -1,0 +1,19 @@
+@media screen and (max-width: 870px) {
+  .marquee {
+    h4:first-child {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+    .marquee {
+      h4:first-child {
+        display: none;
+      }
+      h4:last-child {
+        display: none;
+      }
+    }
+  }
+  

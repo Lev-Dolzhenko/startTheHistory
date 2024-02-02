@@ -1,0 +1,13 @@
+@include mediaTabletSmall {
+    .value__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value__grid_short {
+        align-items: center;
+    }
+
+    .grid_benefits_list {
+        row-gap: 60px;
+    }
+}

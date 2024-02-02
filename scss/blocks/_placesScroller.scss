@@ -1,0 +1,49 @@
+.marquee {
+  overflow: hidden;
+  max-width: 100%;
+  background-color: $colorWhite;
+
+  h4 {
+    display: flex;
+    align-items: center;
+    // column-gap: clamp(15px, -0.341rem + 5.45vw, 60px);
+    text-wrap: nowrap;
+    color: $colorBlack;
+    font-family: $roboto;
+    font-size: clamp(14px, 0.278rem + 2.55vw, 35px);
+    font-weight: 400;
+    line-height: clamp(16px, 0.29rem + 3.03vw, 41px);
+    letter-spacing: 0%;
+    text-align: center;
+
+    width: 100%;
+  }
+
+  img {
+    width: clamp(17px, 0.324rem + 3.15vw, 43px);
+  }
+
+  div {
+    display: flex;
+    width: 200%;
+    padding: clamp(20px, 0.71rem + 2.3vw, 39px) 0;
+  }
+}
+
+.marquee_one {
+  margin-top: 20px;
+  opacity: 0.5;
+
+  div {
+    animation: marqueePlaces 7s linear infinite;
+  }
+}
+
+.marquee_two {
+  transform: rotate(3deg);
+
+  div {
+    animation: marqueePlaces 6s linear infinite;
+
+  }
+}

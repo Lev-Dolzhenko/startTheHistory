@@ -1,0 +1,32 @@
+@include mediaTabletSmall {
+  .begin__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+  }
+
+  .begin__grid_card_small {
+    &:nth-child(2) {
+      order: unset;
+    }
+
+    &:nth-child(3) {
+      order: unset;
+    }
+
+    &:nth-child(4) {
+      order: unset;
+    }
+  }
+
+  .begin__grid_card_large {
+    grid-row: unset;
+    grid-column: unset;
+  }
+
+  .begin__grid_card_long {
+    flex-direction: column;
+    row-gap: 25px;
+    grid-column: unset;
+    text-align: center;
+  }
+}

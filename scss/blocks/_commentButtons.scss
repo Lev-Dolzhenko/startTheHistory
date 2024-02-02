@@ -1,0 +1,34 @@
+.comment__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 45px;
+}
+.comment__buttons_button {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: clamp(16px, 0.773rem + 0.97vw, 24px) clamp(16px, -0.42rem + 6.06vw, 66px);
+    border-radius: 10px;
+    background: $colorBgGrey;
+
+    color: $colorAccent;
+    font-family: $roboto;
+    font-size: clamp(16px,  0.886rem + 0.48vw, 20px);
+    font-weight: 400;
+    line-height: clamp(19px, 1.074rem + 0.48vw, 23px);
+    letter-spacing: 0%;
+    text-align: center;
+
+    transition: background-color 0.2s linear;
+
+    &:hover {
+        background-color: $colorBg;
+    }
+  }
+}
+
+

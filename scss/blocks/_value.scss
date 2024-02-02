@@ -1,0 +1,12 @@
+.value {
+    padding: clamp(30px, 0.057rem + 7.76vw, 94px) 0 clamp(40px, -0.057rem + 10.91vw, 130px);
+}
+
+.value__title {
+    margin-bottom: 98px;
+}
+
+.value__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

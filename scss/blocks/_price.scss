@@ -1,0 +1,134 @@
+.price {
+  background-color: $colorBg;
+  padding: 52px 0 clamp(40px, 1.08rem + 6.06vw, 90px);
+}
+
+.price__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+.price__grid_info {
+  background-color: $colorWhite;
+  border-radius: 30px;
+
+  padding: clamp(27px, 0.949rem + 3.15vw, 53px) clamp(0px, -1.136rem + 4.85vw, 40px);
+  border-right: 26px dashed $colorBg;
+}
+
+.price__grid_info_title {
+  margin-bottom: clamp(37px, 1.801rem + 2.18vw, 55px);
+}
+
+.price__grid_info_new {
+  background-color: $colorAccent;
+  border-radius: 50px;
+
+  padding: 5px 20px;
+
+  color: $colorWhite;
+  font-family: $roboto;
+  font-size: clamp(41px, 1.597rem + 4.12vw, 75px);
+  font-weight: 600;
+  line-height: clamp(49px, 1.983rem + 4.61vw, 87px);
+  letter-spacing: 0%;
+  text-align: left;
+
+  margin-bottom: clamp(12px, 0.466rem + 1.21vw, 22px);
+
+  width: 100%;
+}
+.price_grid_info_old {
+  color: $colorBlackDiscount;
+  font-family: $roboto;
+  font-size: clamp(29px, 1.5rem + 1.33vw, 40px);
+  font-weight: 600;
+  line-height: clamp(34px, 1.784rem + 1.45vw, 46px);
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: line-through;
+
+  margin-left: 29px;
+
+  margin-bottom: clamp(24px, 0.051rem + 6.18vw, 75px);
+}
+.price_grid_info_discount {
+  border-radius: 20px;
+
+  background: $colorBgDiscount;
+  padding: 13px 20px;
+
+  color: $colorTextDiscount;
+  font-family: $roboto;
+  font-size: clamp(15px, 0.739rem + 0.85vw, 22px);
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.price__grid_form {
+  background-color: $colorWhite;
+  border-radius: 30px;
+
+  padding: clamp(34px, 1.585rem + 2.3vw, 53px) clamp(0px, -1.136rem + 4.85vw, 40px);
+
+  label {
+    color: $colorBlack;
+    // font-family: $ro;
+    font-size: clamp(20px, 0.852rem + 1.7vw, 34px);
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    // margin-bottom: auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: clamp(30px, -0.114rem + 8.48vw, 100px);
+
+    input {
+      border-bottom: 3px solid $colorBlackDiscount;
+      color: colorBlackDiscount;
+      font-size: clamp(14px, 0.563rem + 1.33vw, 25px);
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0%;
+
+      padding-bottom: 11px;
+
+      margin-bottom: 50px;
+      &:first-child {
+        margin-bottom: clamp(30px, 0.739rem + 4.85vw, 70px);
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 14px 76px;
+
+      color: $colorWhite;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: center;
+
+      border-radius: 20px;
+      background: $colorTextDiscount;
+
+      max-width: 240px;
+
+      transition: transform 0.2s linear;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.comment {
+    // position: relative;
+
+    padding: clamp(30px, 0.653rem + 5.21vw, 73px) 0 clamp(40px, 0.313rem + 9.33vw, 117px);
+
+}
+
+.comment__subtitle {
+  max-width: 719px;
+  margin: 21px auto 0;
+}
+
+
+.comment_icon {
+    position: absolute;
+    right: 0;
+    top: 85px;
+
+    margin-right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: $colorBgIcon;
+    border-radius: 5px;
+}

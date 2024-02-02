@@ -1,0 +1,25 @@
+.info {
+    padding: clamp(32px, 0.182rem + 7.76vw, 96px) 0 clamp(40px, 0.057rem + 10.42vw, 126px);
+
+    background-color: $colorWhiteMuted;
+}
+
+.info__title {
+}
+.title2 {
+}
+.title2__info {
+}
+.info__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 225px);
+
+    margin-top: 50px;
+}
+
+@include mediaTabletLarge {
+    .info__grid {
+        display: none;
+    }
+}

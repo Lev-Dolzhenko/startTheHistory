@@ -1,0 +1,25 @@
+.header__mobile {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  color: $colorWhite;
+
+  z-index: 90;
+}
+.header__mobile_nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  a {
+    font-size: 20px;
+
+    &:hover {
+      color: $colorAccent;
+    }
+  }
+}
