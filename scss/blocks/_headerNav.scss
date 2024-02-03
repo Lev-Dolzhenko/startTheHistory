@@ -16,7 +16,7 @@
   }
 
   a {
-    font-size: 20px;
+    font-size: clamp(12px, 0.523rem + 0.97vw, 20px);
 
     &:hover {
       color: $colorAccent;
