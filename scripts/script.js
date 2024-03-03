@@ -112,3 +112,188 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// GSAP
+
+const tl = gsap.timeline();
+
+tl.fromTo(
+  ".header__row_title",
+  {
+    y: -100,
+    opacity: 0,
+  },
+  { y: 0, opacity: 1, duration: 0.8 }
+).fromTo(
+  ".header__row_wrapper",
+  { y: -100, opacity: 0 },
+  { y: 0, opacity: 1, duration: 0.8 }
+);
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(
+  ".info__grid_elem",
+  { opacity: 0, y: -100 },
+  {
+    opacity: 1,
+    y: 0,
+    scrollTrigger: {
+      trigger: ".info",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".begin__grid_card_small-left",
+  { opacity: 0, x: -100 },
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".begin",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".begin__grid_card_small-right",
+  { opacity: 0, x: 100 },
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".begin",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".begin__grid_card_large",
+  { opacity: 0, y: -100 },
+  {
+    opacity: 1,
+    y: 0,
+    scrollTrigger: {
+      trigger: ".begin",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".begin__grid_card_long",
+  { opacity: 0, y: 100 },
+  {
+    opacity: 1,
+    y: 0,
+    scrollTrigger: {
+      trigger: ".begin",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".value__grid_short",
+  { opacity: 0, x: -100 },
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".value",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".value__grid_benefits",
+  { opacity: 0, x: 100 },
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".value",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".mySwiper",
+  { opacity: 0, x: 500 },
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".comment",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".comment__buttons",
+  { opacity: 0, y: 200 },
+  {
+    opacity: 1,
+    y: 0,
+    scrollTrigger: {
+      trigger: ".mySwiper",
+      start: "top center",
+      end: "top  top",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".questions__list_question-left",
+  { opacity: 0, x: -100 },
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".questions",
+      start: "top center",
+      end: "top  bottom",
+      scrub: true,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".questions__list_question-right",
+  { opacity: 0, x: 100 },
+  {
+    opacity: 1,
+    x: 0,
+    scrollTrigger: {
+      trigger: ".questions",
+      start: "top center",
+      end: "top  bottom",
+      scrub: true,
+    },
+  }
+);
+

@@ -12,17 +12,21 @@ a {
   }
 }
 
+.main {
+  overflow: hidden;
+}
+
 .overlay {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 18;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 18 !important;
 
   &_nav {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 

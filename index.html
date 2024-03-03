@@ -6,6 +6,14 @@
     <title>StartTheHistory</title>
     <link rel="icon" href="content/favicon/favicon-32x32.png" />
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
@@ -19,12 +27,7 @@
   <body>
     <header class="header no1ne">
       <div class="header__video-bg">
-        <video
-          src="content/header/videoPlanet.mp4"
-          autoplay
-          muted
-          loop
-        ></video>
+        <video src="content/header/videoPlanet.mp4" autoplay muted loop></video>
         <div class="header__effects"></div>
         <div class="container container_video">
           <div class="video-bg__content">
@@ -32,7 +35,7 @@
               <div class="header__row_nav_logotype">
                 <a href="#!">StartTheHistory</a>
               </div>
-              <div id="burgerIcon" class="header__row_nav_burger">
+              <div id="burgerIcon" style="z-index: 300 !important;" class="header__row_nav_burger">
                 <input
                   type="checkbox"
                   id="burger-checkbox"
@@ -107,7 +110,7 @@
       </div>
     </header>
     <main class="main">
-      <section data-elem="aboutMeNav" class="info no1ne scrollPage">
+      <section data-elem="aboutMeNav" class="info section no1ne scrollPage">
         <div class="container">
           <div class="info__title">
             <h2 class="title2 title2__info">Почему мне можно доверять?</h2>
@@ -278,29 +281,29 @@
           </div>
         </div>
       </section>
-      <section class="begin no1ne">
+      <section class="begin section no1ne">
         <div class="container">
           <div class="begin__title">
             <h2 class="title2 title2_begin">Что вы получите?</h2>
           </div>
           <div class="begin__grid">
-            <div class="begin__grid_card_small">
+            <div class="begin__grid_card_small begin__grid_card_small-left">
               <p class="begin__grid_card_text">
                 Уникальную книгу, <br />
                 в которую я вместил все свои 6 лет опыта торговли.
               </p>
             </div>
-            <div class="begin__grid_card_small">
+            <div class="begin__grid_card_small begin__grid_card_small-right">
               <p class="begin__grid_card_text">
                 Задачник, который даст вам полное усвоение пройденного
                 материала.
               </p>
             </div>
-            <div class="begin__grid_card_small">
+            <div class="begin__grid_card_small begin__grid_card_small-left">
               <p class="begin__grid_card_text">Бот-инсайдер на год. </p>
               <p>Подарок каждому ученику. Он поможет вам в будущей торговле.</p>
             </div>
-            <div class="begin__grid_card_small">
+            <div class="begin__grid_card_small begin__grid_card_small-right">
               <p class="begin__grid_card_text">
                 4-ре глобальных урока по инвестициям. 
               </p>
@@ -567,7 +570,7 @@
             <h2 class="title2 title2_questions">Часто задаваемые вопросы</h2>
           </div>
           <div class="questions__list">
-            <div class="questions__list_question">
+            <div class="questions__list_question questions__list_question-left">
               <div class="list_question_title">
                 <strong>Я новичок, смогу осилить программу?</strong>
               </div>
@@ -585,7 +588,7 @@
                 содержание выведет вас на новый уровень понимания рынка.
               </div>
             </div>
-            <div class="questions__list_question">
+            <div class="questions__list_question questions__list_question-right">
               <div class="list_question_title">
                 <strong>Продукт 5 в 1, мне нужно за что-то доплачивать?</strong>
               </div>
@@ -603,7 +606,7 @@
                 содержание выведет вас на новый уровень понимания рынка.
               </div>
             </div>
-            <div class="questions__list_question">
+            <div class="questions__list_question questions__list_question-left">
               <div class="list_question_title">
                 <strong>Если я не пойму что-то, есть поддержка?</strong>
               </div>
@@ -621,7 +624,7 @@
                 содержание выведет вас на новый уровень понимания рынка.
               </div>
             </div>
-            <div class="questions__list_question">
+            <div class="questions__list_question questions__list_question-right">
               <div class="list_question_title">
                 <strong
                   >Я торгую в краткосрок/долгосрок, будет ли полезна
@@ -642,7 +645,7 @@
                 содержание выведет вас на новый уровень понимания рынка.
               </div>
             </div>
-            <div class="questions__list_question">
+            <div class="questions__list_question questions__list_question-left">
               <div class="list_question_title">
                 <strong>Я получаю информацию навсегда?</strong>
               </div>
@@ -660,7 +663,7 @@
                 содержание выведет вас на новый уровень понимания рынка.
               </div>
             </div>
-            <div class="questions__list_question">
+            <div class="questions__list_question questions__list_question-right">
               <div class="list_question_title">
                 <strong>Могу ли я начать позже?</strong>
               </div>
